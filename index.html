@@ -10,20 +10,28 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Fitness Navbar</title>
-    <style></style>
+    
   </head>
   <body>
     <!-- Nab bar design here -->
     <nav class="navbar">
-      <div class="logo">Fitness</div>
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
+        <div class="logo">Fitness</div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
 
      <!-- Hero Section is here -->
      <section class="hero-section">
@@ -262,4 +270,10 @@
 
  
   </body>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("open");
+    }
+  </script>
 </html>
